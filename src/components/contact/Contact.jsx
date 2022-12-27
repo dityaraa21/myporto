@@ -16,7 +16,7 @@ const Contact = () => {
       "8FbbdtyhKdPA5wdvU"
     );
     e.target.reset();
-    toast.warning("Email sent! Thankyou.");
+    toast.success("Email sent! Thankyou.");
   };
 
   return (
