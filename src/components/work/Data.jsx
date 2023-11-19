@@ -1,60 +1,63 @@
-import Covid from "../../assets/testcov.png";
-import Netflix from "../../assets/netflix-2.png";
+import Klaklik from "../../assets/COver Klaklik.png";
 import TMDB from "../../assets/tmdb-api.png";
 import Maltimart from "../../assets/maltimart.png";
 import Burane from "../../assets/burane.png";
 import Florist from "../../assets/florist.png";
-import Todo from "../../assets/todo-app1.png";
-import Laundry from "../../assets/figma-laundry.png";
+import Dashboard from "../../assets/creator-dashboard.png";
+import CreatorForum from "../../assets/creator-forum.png";
+import Kursus from "../../assets/kursus.png";
 
 export const projectsData = [
   {
     id: 1,
-    image: Covid,
-    title: "Covid-19 Website Design",
+    image: Klaklik,
+    title: "Klaklik",
     category: "web",
+    url: "https://www.klaklik.com/",
   },
   {
     id: 2,
-    image: Maltimart,
-    title: "Maltimart E-Commerce",
+    image: Dashboard,
+    title: "Creator Dashboard(Klaklik)",
     category: "web",
+    url: "https://creator.klaklik.com/",
   },
   {
     id: 3,
-    image: TMDB,
-    title: "Try Movie with TMDB API",
+    image: CreatorForum,
+    title: "Creator Forum(Klaklik)",
     category: "web",
+    url: "https://creatorforum.klaklik.com/",
   },
   {
     id: 4,
-    image: Netflix,
-    title: "Clone Netflix",
-    category: "web",
-  },
-  {
-    id: 5,
-    image: Burane,
-    title: "Burane Web Company Profile",
-    category: "web",
-  },
-  {
-    id: 6,
     image: Florist,
     title: "Florist Bouquet E-Commerce",
     category: "web",
   },
   {
+    id: 5,
+    image: Burane,
+    title: "Burane456 Coffee",
+    category: "web",
+  },
+  {
+    id: 6,
+    image: Maltimart,
+    title: "Maltimart E-Commerce",
+    category: "web",
+  },
+  {
     id: 7,
-    image: Todo,
-    title: "To Do App",
-    category: "app",
+    image: TMDB,
+    title: "Try Movie with TMDB API",
+    category: "web",
   },
   {
     id: 8,
-    image: Laundry,
-    title: "Laundry Design App",
-    category: "design",
+    image: Kursus,
+    title: "Website Kursus",
+    category: "web",
   },
 ];
 

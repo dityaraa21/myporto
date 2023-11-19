@@ -26,6 +26,11 @@
   justify-content: center;
 }
 
+.work__null {
+  grid-template-columns: repeat(1, max-content);
+  justify-content: center;
+}
+
 .work__card {
   background-color: var(--container-color);
   border: 1px solid rgb(0, 0, 0, 0.1);
