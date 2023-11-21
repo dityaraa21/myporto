@@ -37,9 +37,9 @@ const Contact = () => {
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">adityarahman453@gmail.com</span>
-              <div className="contact__button" onClick={() => openSocialMedia("email")}>
+              {/* <div className="contact__button" onClick={() => openSocialMedia("email")}>
                 Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </div>
+              </div> */}
             </div>
 
             <div className="contact__card">

@@ -16,7 +16,7 @@ const About = () => {
         <div className="about__data">
           <Info />
 
-          <p className="about__description">As a junior web developer, I love to use my creativity in building websites. Although I may seem inexperienced, I believe I have a passion and interest in web development.</p>
+          <p className="about__description">As a front-end developer with a year of experience, I've successfully delivered compelling web projects. Proficient in HTML, CSS, JavaScript, and VueJS, I thrive on turning designs into functional, user-friendly websites</p>
 
           <a download="" href={CV} className="button button--flex">
             Download CV
