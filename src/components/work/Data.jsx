@@ -3,7 +3,7 @@ import TMDB from "../../assets/tmdb-api.png";
 import Maltimart from "../../assets/maltimart.png";
 import Burane from "../../assets/burane.png";
 import Florist from "../../assets/florist.png";
-import Dashboard from "../../assets/creator-dashboard.png";
+import Dashboard from "../../assets/dashboard-creator.png";
 import CreatorForum from "../../assets/creator-forum.png";
 import Kursus from "../../assets/kursus.png";
 
