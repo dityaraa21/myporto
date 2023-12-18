@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { projectsData, projectsNav } from "./Data";
 import WorkItems from "./WorkItems";
+import { motion } from "framer-motion";
 
 const Works = () => {
   const [item, setItem] = useState({ name: "all" });
@@ -30,6 +31,23 @@ const Works = () => {
     setItem({ name: e.target.textContent });
     setActive(index);
   };
+
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 0.4,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <div>
       <div className="work__filters">
@@ -52,9 +70,13 @@ const Works = () => {
         {nullProjects ? (
           <h2 className="work__title">No projects found.</h2>
         ) : (
-          projects.map((item) => {
-            return <WorkItems item={item} key={item.id} />;
-          })
+          <motion.div className="work__container container grid">
+            {projects.map((item) => (
+              <motion.div initial={"hidden"} whileInView={"visible"} variants={cardVariants} viewport={{ once: true }} key={item.id}>
+                <WorkItems item={item} />
+              </motion.div>
+            ))}
+          </motion.div>
         )}
       </div>
     </div>

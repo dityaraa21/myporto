@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Frontend = () => {
   return (
-    <div className="skills__content">
+    <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.4 }} className="skills__content">
       <h3 className="skills__title">Frontend Developer</h3>
 
       <div className="skills__box">
@@ -82,7 +83,7 @@ const Frontend = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

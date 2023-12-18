@@ -1,4 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const textVariants = {
+  initial: {
+    y: -15,
+    opacity: 1,
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 7,
+    transition: {
+      duration: 1.4,
+      repeat: Infinity,
+    },
+  },
+};
 
 const ScrollDown = () => {
   return (
@@ -40,7 +56,7 @@ const ScrollDown = () => {
           ></path>
         </svg>
         <span className="home__scroll-name">Scroll Down</span>
-        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+        <motion.i variants={textVariants} initial="initial" animate="scrollButton" class="uil uil-arrow-down home__scroll-arrow"></motion.i>
       </a>
     </div>
   );

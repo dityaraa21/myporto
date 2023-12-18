@@ -1,16 +1,21 @@
-import React from 'react'
-import "./work.css"
-import Works from './Works'
+import React from "react";
+import "./work.css";
+import Works from "./Works";
+import { motion } from "framer-motion";
 
 const Work = () => {
   return (
     <section className="work section" id="portfolio">
-        <h2 className="section__title">Portfolio</h2>
-        <span className="section__subtitle">Most recent works</span>
+      <motion.h2 initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="section__title">
+        Portfolio
+      </motion.h2>
+      <motion.span initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="section__subtitle">
+        Most recent works
+      </motion.span>
 
-        <Works />
+      <Works />
     </section>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

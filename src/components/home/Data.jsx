@@ -1,11 +1,25 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const upVariants = {
+  initial: {
+    x: 0,
+    y: 200,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+  },
+};
 
 const Data = () => {
   return (
-    <div className="home__data">
-      <h1 className="home__title">
+    <motion.div className="home__data">
+      <motion.h1 className="home__title">
         Dityaa RA
-        <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="home__hand">
+        <motion.svg whileHover={{ rotate: -30 }} width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="home__hand">
           <path d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z" fill="#FFDD67"></path>
           <path d="M33.8996 4.88018C33.6746 4.80518 33.5246 4.80518 33.2996 4.80518C34.6496 5.33018 35.3996 6.75518 35.0996 8.25518L30.2996 32.9302L31.3496 33.1552L36.1496 8.48018C36.5246 6.75518 35.4746 5.18018 33.8996 4.88018Z" fill="#EBA352"></path>
           <path d="M19.4995 32.7802H26.5495V5.55518C26.5495 3.53018 24.9745 1.80518 23.0245 1.80518C21.1495 1.80518 19.4995 3.45518 19.4995 5.55518V32.7802Z" fill="#FFDD67"></path>
@@ -22,11 +36,15 @@ const Data = () => {
             d="M46.2745 22.28C46.0495 21.83 45.7495 21.53 45.3745 21.23C45.4495 21.305 45.5245 21.38 45.5245 21.53C46.7995 24.08 42.6745 26.405 40.1995 29.405C38.1745 31.88 35.9245 33.83 34.7995 36.455C29.9995 47.93 16.0495 47.93 10.1995 42.68C15.5245 48.68 30.5245 49.28 35.5495 37.205C36.6745 34.58 38.9245 32.63 40.9495 30.155C43.4245 27.155 47.5495 24.755 46.2745 22.28ZM32.3245 28.13C27.4495 26.33 18.7495 29.63 19.9495 38.405C19.9495 30.23 27.3745 28.205 31.4245 28.205C32.0245 28.13 32.3245 28.13 32.3245 28.13Z"
             fill="#EBA352"
           ></path>
-        </svg>
-      </h1>
-      <h3 className="home__subtitle">Front End Developer</h3>
-      <p className="home__description">I'm a front-end developer based in Jakarta, deeply passionate about crafting engaging and seamless web experiences.</p>
-      <a href="#contact" className="button button--flex">
+        </motion.svg>
+      </motion.h1>
+      <motion.h3 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.8 }} className="home__subtitle">
+        Front End Developer
+      </motion.h3>
+      <motion.p variants={upVariants} initial="initial" animate="animate" transition={{ duration: 1, delay: 0.4 }} className="home__description">
+        I'm a front-end developer based in Jakarta, deeply passionate about crafting engaging and seamless web experiences.
+      </motion.p>
+      <motion.a variants={upVariants} initial="initial" animate="animate" transition={{ duration: 1, delay: 0.6 }} href="#contact" className="button button--flex">
         Say Hello
         <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path
@@ -38,8 +56,8 @@ const Data = () => {
             fill="var(--container-color)"
           ></path>
         </svg>
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 };
 

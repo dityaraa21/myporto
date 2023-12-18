@@ -3,22 +3,29 @@ import "./about.css";
 import AboutImg from "../../assets/smith.jpg";
 import CV from "../../assets/RESUME_ADITYA_RAHMAN.pdf";
 import Info from "./Info";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My introduction</span>
+      <motion.h2 initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="section__title">
+        About Me
+      </motion.h2>
+      <motion.span initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="section__subtitle">
+        My introduction
+      </motion.span>
 
       <div className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
+        <motion.img initial={{ y: 0, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ease: "easeOut", duration: 2 }} src={AboutImg} alt="" className="about__img" />
 
         <div className="about__data">
           <Info />
 
-          <p className="about__description">As a front-end developer with a year of experience, I've successfully delivered compelling web projects. Proficient in HTML, CSS, JavaScript, and VueJS, I thrive on turning designs into functional, user-friendly websites</p>
+          <motion.p initial={{ y: 70, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="about__description">
+            As a front-end developer with a year of experience, I've successfully delivered compelling web projects. Proficient in HTML, CSS, JavaScript, and VueJS, I thrive on turning designs into functional, user-friendly websites
+          </motion.p>
 
-          <a download="" href={CV} className="button button--flex">
+          <motion.a initial={{ y: 70, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }} download="" href={CV} className="button button--flex">
             Download CV
             <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -32,7 +39,7 @@ const About = () => {
               <path d="M13.25 13.7502H7.25C6.84 13.7502 6.5 13.4102 6.5 13.0002C6.5 12.5902 6.84 12.2502 7.25 12.2502H13.25C13.66 12.2502 14 12.5902 14 13.0002C14 13.4102 13.66 13.7502 13.25 13.7502Z" fill="var(--container-color)"></path>
               <path d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z" fill="var(--container-color)"></path>
             </svg>
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>

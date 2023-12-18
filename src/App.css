@@ -50,7 +50,6 @@
   --z-modal: 1000;
 }
 
-
 /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
@@ -116,7 +115,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 6rem 0 2rem;
+  padding: 8rem 0 2rem;
 }
 
 .section__title {
