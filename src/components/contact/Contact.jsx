@@ -27,14 +27,23 @@ const Contact = () => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-      },
     },
     hidden: {
       opacity: 0,
-      x: -500,
+      x: -200,
+    },
+  };
+
+  const scrollVariants = {
+    initial: {
+      x: -3,
+    },
+    scrollButton: {
+      x: 7,
+      transition: {
+        duration: 1.4,
+        repeat: Infinity,
+      },
     },
   };
 
@@ -49,7 +58,7 @@ const Contact = () => {
 
           <div className="contact__info">
             <div className="contact__card">
-              <motion.i variants={variants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bx bx-mail-send contact__card-icon"></motion.i>
+              <motion.i variants={variants} initial="hidden" whileInView="visible" transition={{ delay: 0.2 }} viewport={{ once: true }} className="bx bx-mail-send contact__card-icon"></motion.i>
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">adityarahman453@gmail.com</span>
@@ -59,22 +68,22 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <motion.i variants={variants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bx bxl-whatsapp contact__card-icon"></motion.i>
+              <motion.i variants={variants} initial="hidden" whileInView="visible" transition={{ delay: 0.2 }} viewport={{ once: true }} className="bx bxl-whatsapp contact__card-icon"></motion.i>
 
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">+6281314349347</span>
               <div className="contact__button" onClick={() => openSocialMedia("whatsapp")}>
-                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                Write me <motion.i variants={scrollVariants} initial="initial" animate="scrollButton" className="bx bx-right-arrow-alt contact__button-icon"></motion.i>
               </div>
             </div>
 
             <div className="contact__card">
-              <motion.i variants={variants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bx bxl-instagram contact__card-icon"></motion.i>
+              <motion.i variants={variants} initial="hidden" whileInView="visible" transition={{ delay: 0.2 }} viewport={{ once: true }} className="bx bxl-instagram contact__card-icon"></motion.i>
 
               <h3 className="contact__card-title">Instagram</h3>
               <span className="contact__card-data">_dityaraa.21</span>
               <a href="https://www.instagram.com/_dityaraa.21/" className="contact__button">
-                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                Write me <motion.i variants={scrollVariants} initial="initial" animate="scrollButton" className="bx bx-right-arrow-alt contact__button-icon"></motion.i>
               </a>
             </div>
           </div>
