@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./about.css";
 import AboutImg from "../../assets/smith.jpg";
 import CV from "../../assets/RESUME_ADITYA_RAHMAN.pdf";
@@ -6,6 +6,19 @@ import Info from "./Info";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setIsLoading(false);
+    };
+    img.src = AboutImg;
+
+    return () => {
+      img.onload = null;
+    };
+  }, []);
+
   return (
     <section className="about section" id="about">
       <motion.h2 initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="section__title">
@@ -16,7 +29,7 @@ const About = () => {
       </motion.span>
 
       <div className="about__container container grid">
-        <motion.img initial={{ y: 0, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ease: "easeOut", duration: 2 }} src={AboutImg} alt="" className="about__img" />
+        <div className="about__img">{isLoading ? <div className="about__img-skeleton"></div> : <img src={AboutImg} alt="About Me" />}</div>
 
         <div className="about__data">
           <Info />
