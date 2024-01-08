@@ -100,7 +100,7 @@ const Qualification = () => {
                 <h3 className="qualification__title">MNC Pictures</h3>
                 <span className="qualification__subtitle">Kebon Jeruk</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2023
+                  <i className="uil uil-calendar-alt"></i> 2023 - 2024
                 </div>
               </motion.div>
 
