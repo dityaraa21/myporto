@@ -10,20 +10,38 @@ const Qualification = () => {
   };
   return (
     <section className="qualification section">
-      <motion.h2 initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="section__title">
+      <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+        className="section__title"
+      >
         Qualification
       </motion.h2>
-      <motion.span initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="section__subtitle">
+      <motion.span
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+        className="section__subtitle"
+      >
         My personel journey
       </motion.span>
 
       <div className="qualification__container container">
         <div className="qualification__tabs">
-          <div className={toggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(1)}>
+          <div
+            className={toggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"}
+            onClick={() => toggleTab(1)}
+          >
             <i className="uil uil-graduation-cap qualification__icon"></i> Education
           </div>
 
-          <div className={toggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(2)}>
+          <div
+            className={toggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"}
+            onClick={() => toggleTab(2)}
+          >
             <i className="uil uil-briefcase-alt qualification__icon"></i> Experience
           </div>
           {/* <div className={toggleState === 3 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(3)}>
@@ -108,6 +126,21 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
+            </div>
+            <div className="qualification__data">
+              <div></div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.1 }}>
+                <h3 className="qualification__title">RUMAT Indonesia</h3>
+                <span className="qualification__subtitle">Tambun</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i> 2024
+                </div>
+              </motion.div>
             </div>
           </div>
           {/* <div className={toggleState === 3 ? "qualification__content qualification__content-active" : "qualification__content"}>
