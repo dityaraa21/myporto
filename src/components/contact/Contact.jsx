@@ -17,7 +17,10 @@ const Contact = () => {
 
   const openSocialMedia = (item) => {
     if (item === "email") {
-      window.open("https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDwjbfnQfkPKHFlpFGwCFrFcrkQCjwjmxVLhBMfflxMsptxqPHGlFPRtLwcpDJSKXwZszKQ", "_blank");
+      window.open(
+        "https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDwjbfnQfkPKHFlpFGwCFrFcrkQCjwjmxVLhBMfflxMsptxqPHGlFPRtLwcpDJSKXwZszKQ",
+        "_blank"
+      );
     } else if (item === "whatsapp") {
       window.open("https://wa.me/6281314349347?text=Hello%20there!", "_blank");
     }
@@ -58,7 +61,14 @@ const Contact = () => {
 
           <div className="contact__info">
             <div className="contact__card">
-              <motion.i variants={variants} initial="hidden" whileInView="visible" transition={{ delay: 0.2 }} viewport={{ once: true }} className="bx bx-mail-send contact__card-icon"></motion.i>
+              <motion.i
+                variants={variants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bx bx-mail-send contact__card-icon"
+              ></motion.i>
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">adityarahman453@gmail.com</span>
@@ -68,22 +78,48 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <motion.i variants={variants} initial="hidden" whileInView="visible" transition={{ delay: 0.2 }} viewport={{ once: true }} className="bx bxl-whatsapp contact__card-icon"></motion.i>
+              <motion.i
+                variants={variants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bx bxl-whatsapp contact__card-icon"
+              ></motion.i>
 
               <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data">+6281314349347</span>
+              <span className="contact__card-data">+6285717486916</span>
               <div className="contact__button" onClick={() => openSocialMedia("whatsapp")}>
-                Write me <motion.i variants={scrollVariants} initial="initial" animate="scrollButton" className="bx bx-right-arrow-alt contact__button-icon"></motion.i>
+                Write me{" "}
+                <motion.i
+                  variants={scrollVariants}
+                  initial="initial"
+                  animate="scrollButton"
+                  className="bx bx-right-arrow-alt contact__button-icon"
+                ></motion.i>
               </div>
             </div>
 
             <div className="contact__card">
-              <motion.i variants={variants} initial="hidden" whileInView="visible" transition={{ delay: 0.2 }} viewport={{ once: true }} className="bx bxl-instagram contact__card-icon"></motion.i>
+              <motion.i
+                variants={variants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bx bxl-instagram contact__card-icon"
+              ></motion.i>
 
               <h3 className="contact__card-title">Instagram</h3>
               <span className="contact__card-data">_dityaraa.21</span>
               <a href="https://www.instagram.com/_dityaraa.21/" className="contact__button">
-                Write me <motion.i variants={scrollVariants} initial="initial" animate="scrollButton" className="bx bx-right-arrow-alt contact__button-icon"></motion.i>
+                Write me{" "}
+                <motion.i
+                  variants={scrollVariants}
+                  initial="initial"
+                  animate="scrollButton"
+                  className="bx bx-right-arrow-alt contact__button-icon"
+                ></motion.i>
               </a>
             </div>
           </div>
