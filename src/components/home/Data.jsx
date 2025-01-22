@@ -74,8 +74,8 @@ const Data = () => {
         Full Stack Developer
       </motion.h3>
       <motion.p variants={upVariants} initial="initial" animate="animate" transition={{ duration: 1, delay: 0.4 }} className="home__description">
-        I'm a full-stack developer based in Jakarta, deeply passionate about building efficient and scalable web applications that solve real problems
-        and provide value to users.
+        I’m a full-stack developer based in Jakarta, deeply passionate about building efficient and scalable web applications or PWAs that solve real
+        problems and provide value to users.
       </motion.p>
       <motion.a
         variants={upVariants}

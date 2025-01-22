@@ -19,7 +19,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skills__name">Laravel</h3>
-              <span className="skills__level">Intermediate</span>
+              <span className="skills__level">Advance</span>
             </div>
           </div>
 
@@ -28,7 +28,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skills__name">MySQL</h3>
-              <span className="skills__level">Intermediate</span>
+              <span className="skills__level">Advance</span>
             </div>
           </div>
         </div>
@@ -40,6 +40,14 @@ const Backend = () => {
             <div>
               <h3 className="skills__name">Golang</h3>
               <span className="skills__level">Intermediate</span>
+            </div>
+          </div>
+          <div className="skills__data">
+            <i class="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className="skills__name">Nginx</h3>
+              <span className="skills__level">Advance</span>
             </div>
           </div>
         </div>

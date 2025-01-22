@@ -54,7 +54,7 @@ const About = () => {
             className="about__description"
           >
             As a full-stack developer, I've successfully delivered compelling web projects. Proficient in HTML, CSS, JavaScript, VueJS, Laravel and
-            MySQL. I thrive on creating seamless user experiences and robust back-end systems.
+            MySQL. I thrive on creating seamless user experiences and robust systems.
           </motion.p>
 
           <motion.a

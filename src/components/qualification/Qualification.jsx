@@ -135,10 +135,10 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.1 }}>
-                <h3 className="qualification__title">RUMAT Indonesia</h3>
+                <h3 className="qualification__title">PT Rumah Perawatan Indonesia (RUMAT)</h3>
                 <span className="qualification__subtitle">Tambun</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2024
+                  <i className="uil uil-calendar-alt"></i> 2024 - Present
                 </div>
               </motion.div>
             </div>
