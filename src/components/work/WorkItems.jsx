@@ -1,13 +1,30 @@
 import React from "react";
 import { toast } from "react-toastify";
 
+const isInAppBrowser = () => {
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  return (
+    ua.includes("Instagram") ||
+    ua.includes("FBAN") || // Facebook app
+    ua.includes("FBAV") ||
+    ua.includes("FB_IAB") ||
+    ua.includes("Line") ||
+    ua.includes("Twitter")
+  );
+};
+
 const WorkItems = ({ item }) => {
   const showToast = (url) => {
     if (url === "" || url === undefined) {
       toast.warn("Demo is not available!");
-    } else {
-      window.open(url, "_blank");
+      return;
     }
+
+    if (isInAppBrowser()) {
+      toast.info("Anda membuka dari aplikasi Instagram/FB. Untuk pengalaman terbaik, silakan buka demo ini di browser seperti Google Chrome.");
+    }
+
+    window.open(url, "_blank");
   };
 
   return (

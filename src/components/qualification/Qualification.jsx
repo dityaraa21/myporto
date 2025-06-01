@@ -56,7 +56,7 @@ const Qualification = () => {
                 <h3 className="qualification__title">SMAN 01 MIPA</h3>
                 <span className="qualification__subtitle">Cikarang Barat</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2013 - 2018
+                  <i className="uil uil-calendar-alt"></i> 2015 - 2018
                 </div>
               </motion.div>
 

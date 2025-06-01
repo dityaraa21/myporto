@@ -3,7 +3,7 @@ import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
 import ScrollDown from "./ScrollDown";
-import imageSrc from "../../assets/smith.jpg";
+import imageSrc from "../../assets/adit.JPG";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);

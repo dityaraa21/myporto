@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./about.css";
-import AboutImg from "../../assets/smith.jpg";
-import CV from "../../assets/RESUME_ADITYA_RAHMAN.pdf";
+import AboutImg from "../../assets/adit.JPG";
+import CV from "../../assets/RESUME-ADIT-05-2025.pdf";
 import Info from "./Info";
 import { motion } from "framer-motion";
 

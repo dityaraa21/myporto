@@ -13,6 +13,7 @@ const Backend = () => {
       <h3 className="skills__title">Backend Developer</h3>
 
       <div className="skills__box">
+        {/* Left */}
         <div className="skills__group">
           <div className="skills__data">
             <i class="bx bx-badge-check"></i>
@@ -31,22 +32,41 @@ const Backend = () => {
               <span className="skills__level">Advance</span>
             </div>
           </div>
+
+          <div className="skills__data">
+            <i class="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className="skills__name">Deployment</h3>
+              <span className="skills__level">Advance</span>
+            </div>
+          </div>
         </div>
 
+        {/* Right */}
         <div className="skills__group">
           <div className="skills__data">
             <i class="bx bx-badge-check"></i>
 
             <div>
               <h3 className="skills__name">Golang</h3>
-              <span className="skills__level">Intermediate</span>
+              <span className="skills__level">Advance</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i class="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className="skills__name">REST API</h3>
+              <span className="skills__level">Advance</span>
             </div>
           </div>
           <div className="skills__data">
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Nginx</h3>
+              <h3 className="skills__name">Git</h3>
               <span className="skills__level">Advance</span>
             </div>
           </div>
