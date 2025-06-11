@@ -20,7 +20,15 @@ const Data = () => {
       <motion.h1 className="home__title">
         Dityaa RA
         <motion.svg
-          whileHover={{ rotate: -30 }}
+          animate={{
+            rotate: [0, -20, 0, -20, 0], // animasi bolak-balik rotasi
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "loop",
+            ease: "easeInOut",
+          }}
           width="36"
           height="36"
           viewBox="0 0 48 48"
